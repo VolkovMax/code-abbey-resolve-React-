@@ -14,7 +14,7 @@ class Header extends Component {
 				<div className="container">
 					<div className="row">
 						<div className="col-6">
-							<h1>Code Abbey Resolve</h1>
+							<h1>Code Abbey Test Resolve</h1>
 						</div>
 					</div>
 				</div>
