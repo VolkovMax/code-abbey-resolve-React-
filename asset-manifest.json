@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/code-abbey-resolve-React-/static/css/main.bb3503ad.chunk.css",
+    "main.js": "/code-abbey-resolve-React-/static/js/main.18047c62.chunk.js",
+    "main.js.map": "/code-abbey-resolve-React-/static/js/main.18047c62.chunk.js.map",
+    "runtime-main.js": "/code-abbey-resolve-React-/static/js/runtime-main.75ec6317.js",
+    "runtime-main.js.map": "/code-abbey-resolve-React-/static/js/runtime-main.75ec6317.js.map",
+    "static/js/2.840c61f0.chunk.js": "/code-abbey-resolve-React-/static/js/2.840c61f0.chunk.js",
+    "static/js/2.840c61f0.chunk.js.map": "/code-abbey-resolve-React-/static/js/2.840c61f0.chunk.js.map",
+    "index.html": "/code-abbey-resolve-React-/index.html",
+    "precache-manifest.09e3de18c41f8652b80d35bdde3e0a6f.js": "/code-abbey-resolve-React-/precache-manifest.09e3de18c41f8652b80d35bdde3e0a6f.js",
+    "service-worker.js": "/code-abbey-resolve-React-/service-worker.js",
+    "static/css/main.bb3503ad.chunk.css.map": "/code-abbey-resolve-React-/static/css/main.bb3503ad.chunk.css.map",
+    "static/js/2.840c61f0.chunk.js.LICENSE.txt": "/code-abbey-resolve-React-/static/js/2.840c61f0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.75ec6317.js",
+    "static/js/2.840c61f0.chunk.js",
+    "static/css/main.bb3503ad.chunk.css",
+    "static/js/main.18047c62.chunk.js"
+  ]
+}
