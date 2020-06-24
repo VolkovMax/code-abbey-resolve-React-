@@ -10,10 +10,10 @@ class FirstProblem extends Component {
 	}
 	resolve() {
 		const data = document
-			.getElementById('data1')
+			.getElementById('data')
 			.value.split(' ')
 			.map((x) => +x);
-		document.getElementById('answer1').value = data.reduce((a, b) => a + b);
+		document.getElementById('answer').value = data.reduce((a, b) => a + b);
 		document.getElementById('code').innerHTML =
 			"const data = document.getElementById('data').value.split(' ').map((x) => +x)";
 		document.getElementById('code1').innerHTML =
@@ -31,13 +31,13 @@ class FirstProblem extends Component {
 				<div className="row">
 					<div className="col-6 d-flex align-items-end">
 						<p>Input test data</p>
-						<input id="data1" type="text" />
+						<input id="data" type="text" />
 						<button type="button" onClick={this.resolve}>
 							Solve!
 						</button>
 					</div>
 					<div className="col-6 d-flex align-items-end">
-						<input id="answer1" type="text" name="solve" />
+						<input id="answer" type="text" name="solve" />
 					</div>
 				</div>
 				<div className="row">

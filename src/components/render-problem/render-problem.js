@@ -11,19 +11,11 @@ class RenderProblem extends Component {
 		this.onChangeProblem = this.onChangeProblem.bind(this);
 	}
 	onChangeProblem() {
-		const problemId = document.getElementById('select').value;
-		console.log(problemId);
-
-		if (problemId == 1) {
-			this.setState(() => ({
-				problem: <FirstProblem />,
-			}));
-		}
-		if (problemId == 2) {
-			this.setState(() => ({
-				problem: <SecondProblem />,
-			}));
-		}
+		const problemId = document.getElementById('select').value - 1;
+		const arr = [<FirstProblem />, <SecondProblem />];
+		this.setState(() => ({
+			problem: arr[problemId],
+		}));
 	}
 	render() {
 		return (

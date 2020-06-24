@@ -14,9 +14,9 @@ class SecondProblem extends Component {
 			.value.split(' ')
 			.map((x) => +x);
 		document.getElementById('answer').value = data.reduce((a, b) => a + b);
-		document.getElementById('code2').innerHTML =
+		document.getElementById('code').innerHTML =
 			"const data = document.getElementById('data').value.split(' ').map((x) => +x)";
-		document.getElementById('code3').innerHTML =
+		document.getElementById('code1').innerHTML =
 			"document.getElementById('answer').value = data.reduce((a, b) => a + b)";
 	}
 	render() {
@@ -42,9 +42,9 @@ class SecondProblem extends Component {
 				</div>
 				<div className="row">
 					<div className="col-12">
-						<code id="code2" className="code"></code>
+						<code id="code" className="code"></code>
 						<br />
-						<code id="code3" className="code"></code>
+						<code id="code1" className="code"></code>
 					</div>
 				</div>
 			</div>
