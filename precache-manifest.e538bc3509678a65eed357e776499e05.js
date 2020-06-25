@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "79f12a9afe4865f5228121f99fed0118",
+    "revision": "9aed80190108f17990d5d8e3ee7d9bb8",
     "url": "/code-abbey-resolve-React-/index.html"
   },
   {
-    "revision": "f873ba17f4a6c702a90c",
-    "url": "/code-abbey-resolve-React-/static/css/main.9c630cb0.chunk.css"
+    "revision": "2af684890fefc2fbcb4a",
+    "url": "/code-abbey-resolve-React-/static/css/main.546e8684.chunk.css"
   },
   {
     "revision": "02f95cc6cdba72685864",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/code-abbey-resolve-React-/static/js/2.840c61f0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f873ba17f4a6c702a90c",
-    "url": "/code-abbey-resolve-React-/static/js/main.2b104909.chunk.js"
+    "revision": "2af684890fefc2fbcb4a",
+    "url": "/code-abbey-resolve-React-/static/js/main.9b8cdd28.chunk.js"
   },
   {
     "revision": "6387e405cbc032ab9da6",
