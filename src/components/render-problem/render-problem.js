@@ -22,10 +22,10 @@ class RenderProblem extends Component {
 		return (
 			<div className="row render-problem">
 				<div className="container render-problem__inner">
-					<div className="col-lg-3 col-sm-12">
+					<div className="col-lg-3 col-sm-12 render-problem-selector">
 						<p>Select problem</p>
 						<select
-							className="custom-select"
+							className="custom-select render-prodlem-select"
 							onChange={this.onChangeProblem}
 							id="select"
 						>

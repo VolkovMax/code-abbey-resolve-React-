@@ -12,8 +12,8 @@ class Header extends Component {
 		return (
 			<div className="header">
 				<div className="container">
-					<div className="row">
-						<div className="col-12">
+					<div className="row header__inner">
+						<div className="col-12 header-logo">
 							<h1>Code Abbey Resolve</h1>
 						</div>
 					</div>
