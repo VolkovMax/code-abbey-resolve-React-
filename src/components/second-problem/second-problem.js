@@ -30,7 +30,6 @@ class SecondProblem extends Component {
 				document.getElementById('code1').innerHTML =
 					"document.getElementById('answer').value = data.reduce((a, b) => a + b)";
 			}
-			console.log(data[i]);
 		}
 	}
 
@@ -40,7 +39,7 @@ class SecondProblem extends Component {
 				<div className="row problem-heading">
 					<div className="col-12 text-center problem-heading-inner">
 						<h3>Sum in Loop</h3>
-						<p>Second Problem</p>
+						<p>Problem #2</p>
 					</div>
 				</div>
 				<div className="row problem-data">
@@ -82,47 +81,3 @@ class SecondProblem extends Component {
 }
 
 export default SecondProblem;
-
-{
-	/* <div className="container">
-				<div className="row">
-					<div className="col-12 text-center">
-						<h3>Sum in Loop</h3>
-						<p>Second Problem</p>
-					</div>
-				</div>
-				<div className="row">
-					<div className="col-lg-6 col-sm-12 d-flex align-items-end">
-						<input
-							className="form-control input-without-amount"
-							id="data"
-							type="text"
-							placeholder="Input data WITHOUT(!!!) amount of values"
-						/>
-						<button
-							className="btn btn-secondary"
-							type="button"
-							onClick={this.resolve}
-						>
-							Solve!
-						</button>
-					</div>
-					<div className="col-lg-6 col-sm-12 d-flex align-items-end">
-						<input
-							className="form-control"
-							id="answer"
-							type="text"
-							name="solve"
-							placeholder="Answer is..."
-						/>
-					</div>
-				</div>
-				<div className="row">
-					<div className="col-12">
-						<code id="code" className="code"></code>
-						<br />
-						<code id="code1" className="code"></code>
-					</div>
-				</div>
-			</div> */
-}

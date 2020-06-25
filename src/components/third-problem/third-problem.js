@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './first-problem.css';
+import './third-problem.css';
 
-class FirstProblem extends Component {
+class ThirdProblem extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -17,18 +17,29 @@ class FirstProblem extends Component {
 		for (let i = 0; i < data.length; i++) {
 			if (isNaN(data[i])) {
 				document.getElementById('code').innerHTML =
-					'Input 2 numbers! For example: 7 10';
+					"Input array of numbers! For example '363911 373629 874807 152984 981786 176275'";
 				document.getElementById('code1').innerHTML = '';
 				document.getElementById('answer').value = '';
 				break;
 			} else {
-				document.getElementById('answer').value = data.reduce(
-					(a, b) => a + b
-				);
-				document.getElementById('code').innerHTML =
-					"const data = document.getElementById('data').value.split(' ').map((x) => +x)";
-				document.getElementById('code1').innerHTML =
-					"document.getElementById('answer').value = data.reduce((a, b) => a + b)";
+				let answer = '';
+				for (let i = 0; i < data.length; i += 2) {
+					answer += `${data[i] + data[i + 1]} `;
+				}
+				document.getElementById('answer').value = answer;
+				document.getElementById(
+					'code'
+				).innerHTML = `const data = document.getElementById('data').value.split(' ').map((x) => +x)`;
+				document.getElementById('code1').innerHTML = `let answer = '';`;
+				document.getElementById(
+					'code2'
+				).innerHTML = `for (let i = 0; i < data.length; i += 2) {`;
+				document.getElementById('code3').innerHTML =
+					'answer += "${data[i] + data[i + 1]}";';
+				document.getElementById('code4').innerHTML = `}`;
+				document.getElementById(
+					'code5'
+				).innerHTML = `document.getElementById('answer').value = answer;`;
 			}
 		}
 	}
@@ -38,17 +49,17 @@ class FirstProblem extends Component {
 			<div className="container">
 				<div className="row problem-heading">
 					<div className="col-12 text-center problem-heading-inner">
-						<h3>Sum "A+B"</h3>
-						<p>Problem #1</p>
+						<h3>Sums in Loop</h3>
+						<p>Problem #3</p>
 					</div>
 				</div>
 				<div className="row problem-data">
 					<div className="col-lg-6 col-sm-12 d-flex align-items-end problem-data-input">
 						<input
-							className="form-control"
+							className="form-control input__without-amount"
 							id="data"
 							type="text"
-							placeholder="Input test data"
+							placeholder="Input data WITHOUT(!!!) amount of values"
 						/>
 						<button
 							className="btn btn-secondary"
@@ -73,6 +84,14 @@ class FirstProblem extends Component {
 						<code id="code" className="code"></code>
 						<br />
 						<code id="code1" className="code"></code>
+						<br />
+						<code id="code2" className="code"></code>
+						<br />
+						<code id="code3" className="code"></code>
+						<br />
+						<code id="code4" className="code"></code>
+						<br />
+						<code id="code5" className="code"></code>
 					</div>
 				</div>
 			</div>
@@ -80,4 +99,4 @@ class FirstProblem extends Component {
 	}
 }
 
-export default FirstProblem;
+export default ThirdProblem;

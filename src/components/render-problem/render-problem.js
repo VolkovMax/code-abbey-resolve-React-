@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import FirstProblem from '../first-problem';
 import SecondProblem from '../second-problem';
+import ThirdProblem from '../third-problem';
 import './render-problem.css';
 
 class RenderProblem extends Component {
@@ -13,7 +14,7 @@ class RenderProblem extends Component {
 	}
 	onChangeProblem() {
 		const problemId = document.getElementById('select').value - 1;
-		const arr = [<FirstProblem />, <SecondProblem />];
+		const arr = [<FirstProblem />, <SecondProblem />, <ThirdProblem />];
 		this.setState(() => ({
 			problem: arr[problemId],
 		}));
@@ -31,6 +32,7 @@ class RenderProblem extends Component {
 						>
 							<option value="1">Problem 1</option>
 							<option value="2">Problem 2</option>
+							<option value="3">Problem 3</option>
 						</select>
 					</div>
 				</div>
