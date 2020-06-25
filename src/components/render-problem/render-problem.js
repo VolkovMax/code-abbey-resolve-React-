@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import FirstProblem from '../first-problem';
 import SecondProblem from '../second-problem';
+import './render-problem.css';
 
 class RenderProblem extends Component {
 	constructor(props) {
@@ -19,11 +20,20 @@ class RenderProblem extends Component {
 	}
 	render() {
 		return (
-			<div>
-				<select onChange={this.onChangeProblem} id="select">
-					<option value="1">Problem 1</option>
-					<option value="2">Problem 2</option>
-				</select>
+			<div className="row render-problem">
+				<div className="container render-problem__inner">
+					<div className="col-lg-3 col-sm-12">
+						<p>Select problem</p>
+						<select
+							className="custom-select"
+							onChange={this.onChangeProblem}
+							id="select"
+						>
+							<option value="1">Problem 1</option>
+							<option value="2">Problem 2</option>
+						</select>
+					</div>
+				</div>
 				{this.state.problem}
 			</div>
 		);

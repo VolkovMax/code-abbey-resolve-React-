@@ -30,14 +30,28 @@ class SecondProblem extends Component {
 				</div>
 				<div className="row">
 					<div className="col-6 d-flex align-items-end">
-						<p>Input test data</p>
-						<input id="data" type="text" name="data" />
-						<button type="button" onClick={this.resolve}>
+						<input
+							className="form-control"
+							id="data"
+							type="text"
+							placeholder="Input test data"
+						/>
+						<button
+							className="btn btn-secondary"
+							type="button"
+							onClick={this.resolve}
+						>
 							Solve!
 						</button>
 					</div>
 					<div className="col-6 d-flex align-items-end">
-						<input id="answer" type="text" name="solve" />
+						<input
+							className="form-control"
+							id="answer"
+							type="text"
+							name="solve"
+							placeholder="Answer is..."
+						/>
 					</div>
 				</div>
 				<div className="row">

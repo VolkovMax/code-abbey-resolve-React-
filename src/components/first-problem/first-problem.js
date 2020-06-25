@@ -29,15 +29,29 @@ class FirstProblem extends Component {
 					</div>
 				</div>
 				<div className="row">
-					<div className="col-6 d-flex align-items-end">
-						<p>Input test data</p>
-						<input id="data" type="text" />
-						<button type="button" onClick={this.resolve}>
+					<div className="col-lg-6 col-sm-12 d-flex align-items-end">
+						<input
+							className="form-control"
+							id="data"
+							type="text"
+							placeholder="Input test data"
+						/>
+						<button
+							className="btn btn-secondary"
+							type="button"
+							onClick={this.resolve}
+						>
 							Solve!
 						</button>
 					</div>
-					<div className="col-6 d-flex align-items-end">
-						<input id="answer" type="text" name="solve" />
+					<div className="col-lg-6 col-sm-12 d-flex align-items-end">
+						<input
+							className="form-control"
+							id="answer"
+							type="text"
+							name="solve"
+							placeholder="Answer is..."
+						/>
 					</div>
 				</div>
 				<div className="row">
