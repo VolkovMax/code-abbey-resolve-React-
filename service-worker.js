@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/code-abbey-resolve-React-/precache-manifest.e538bc3509678a65eed357e776499e05.js"
+  "/code-abbey-resolve-React-/precache-manifest.c2c35029fb540d9c8af7575fcc7415fb.js"
 );
 
 self.addEventListener('message', (event) => {
